@@ -11,10 +11,8 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
 }
@@ -35,4 +33,12 @@ body, html {
 
 .sound-toggle:hover {
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Адаптация для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .sound-toggle {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
